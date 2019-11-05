@@ -6,20 +6,23 @@
 //
 
 import UIKit
+import RxSwift
 
 @available(iOS 9.0, *)
 public class Table: UITableView {
-    private var data: [UIView]
+    private var data = BehaviorSubject<[UIView]>(value: [])
     private var defaultCellHeight: Float?
     
     private var didSelectHandler: ((UIView) -> Void)?
     private var configureCell: ((UITableViewCell) -> Void)?
     
+    private var bag = DisposeBag()
+    
     public init(defaultCellHeight: Float? = nil,
                 _ closure: () -> [UIView]) {
         
         self.defaultCellHeight = defaultCellHeight
-        self.data = closure()
+        self.data.onNext(closure())
         
         super.init(frame: .zero, style: .plain)
         
@@ -27,10 +30,24 @@ public class Table: UITableView {
         dataSource = self
         
         register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        bind()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func update(data: [UIView]) {
+        self.data.onNext(data)
+    }
+    
+    private func bind() {
+        bag.insert([
+            data.subscribe(onNext: { [weak self] (data) in
+                self?.reloadData()
+            })
+        ])
     }
 }
 
@@ -56,7 +73,7 @@ extension Table: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return (try? data.value().count) ?? 0
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,7 +81,11 @@ extension Table: UITableViewDataSource {
         
         configureCell?(cell)
         cell.contentView.embed {
-            self.data[indexPath.row]
+            if let data = (try? self.data.value()) {
+                return data[indexPath.row]
+            }
+            
+            return (try! self.data.value())[indexPath.row]
         }
         
         return cell
@@ -81,6 +102,6 @@ extension Table: UITableViewDataSource {
 @available(iOS 9.0, *)
 extension Table: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        didSelectHandler?(data[indexPath.row])
+        (try? data.value()).map { didSelectHandler?($0[indexPath.row]) }
     }
 }
