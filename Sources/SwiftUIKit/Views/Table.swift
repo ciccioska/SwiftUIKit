@@ -7,10 +7,11 @@
 
 import UIKit
 import RxSwift
+import RxRelay
 
 @available(iOS 9.0, *)
 public class Table: UITableView {
-    private var data = BehaviorSubject<[UIView]>(value: [])
+    private var data = BehaviorRelay<[UIView]>(value: [])
     private var defaultCellHeight: Float?
     
     private var didSelectHandler: ((UIView) -> Void)?
@@ -22,7 +23,7 @@ public class Table: UITableView {
                 _ closure: () -> [UIView]) {
         
         self.defaultCellHeight = defaultCellHeight
-        self.data.onNext(closure())
+        self.data.accept(closure())
         
         super.init(frame: .zero, style: .plain)
         
@@ -39,7 +40,7 @@ public class Table: UITableView {
     }
     
     public func update(data: [UIView]) {
-        self.data.onNext(data)
+        self.data.accept(data)
     }
     
     private func bind() {
@@ -73,7 +74,7 @@ extension Table: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (try? data.value().count) ?? 0
+        return data.value.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,11 +82,7 @@ extension Table: UITableViewDataSource {
         
         configureCell?(cell)
         cell.contentView.embed {
-            if let data = (try? self.data.value()) {
-                return data[indexPath.row]
-            }
-            
-            return (try! self.data.value())[indexPath.row]
+            return self.data.value[indexPath.row]
         }
         
         return cell
@@ -102,6 +99,15 @@ extension Table: UITableViewDataSource {
 @available(iOS 9.0, *)
 extension Table: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        (try? data.value()).map { didSelectHandler?($0[indexPath.row]) }
+        didSelectHandler?(data.value[indexPath.row])
+    }
+}
+
+// MARK: RxSwift Extension
+@available(iOS 9.0, *)
+public extension Table {
+    func bind(source: BehaviorRelay<[UIView]>) -> Self {
+        bag.insert(data.bind(to: source))
+        return self
     }
 }
