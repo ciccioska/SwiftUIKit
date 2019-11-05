@@ -19,6 +19,8 @@ public class Table: UITableView {
     
     private var bag = DisposeBag()
     
+    public var currentData: [UIView] = []
+    
     public init(defaultCellHeight: Float? = nil,
                 _ closure: () -> [UIView]) {
         
@@ -46,6 +48,7 @@ public class Table: UITableView {
     private func bind() {
         bag.insert([
             data.subscribe(onNext: { [weak self] (data) in
+                self?.currentData = data
                 self?.reloadData()
             })
         ])
@@ -107,7 +110,12 @@ extension Table: UITableViewDelegate {
 @available(iOS 9.0, *)
 public extension Table {
     func bind(source: BehaviorRelay<[UIView]>) -> Self {
-        bag.insert(data.bind(to: source))
+        source
+            .subscribe(onNext: { [weak self] (newData) in
+                self?.data.accept(newData)
+            })
+            .disposed(by: bag)
+        
         return self
     }
 }

@@ -1,4 +1,6 @@
 import XCTest
+import RxSwift
+import RxRelay
 @testable import SwiftUIKit
 
 @available(iOS 9.0, *)
@@ -25,8 +27,32 @@ final class SwiftUIKitTests: XCTestCase {
         assert(button.accessibilityTraits == .button)
     }
     
+    func testTableRx() {
+        let mockSource = BehaviorRelay<[UIView]>(value: [])
+        
+        let table = Table {
+            [
+                Label("Cell One"),
+                Label("Cell Two"),
+                HStack {
+                    [
+                        Label("Title"),
+                        Spacer(),
+                        Label("45")
+                    ]
+                },
+            ]
+        }
+        .bind(source: mockSource)
+        
+        mockSource.accept([Label("This is just one view!")])
+        
+        assert(table.currentData.count == 1)
+    }
+    
     static var allTests = [
         ("testLabelADA", testLabelADA),
-        ("testButtonADA", testButtonADA)
+        ("testButtonADA", testButtonADA),
+        ("TableRx", testTableRx)
     ]
 }
