@@ -88,9 +88,9 @@ extension Table: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         configureCell?(cell)
-        cell.contentView.embed {
-            return self.data.value[indexPath.row]
-        }
+        cell.contentView
+            .clear()
+            .embed { self.data.value[indexPath.row] }
         
         return cell
     }
