@@ -4,6 +4,8 @@ import XCTest
 public func allTests() -> [XCTestCaseEntry] {
     return [
         testCase(SwiftUIKitTests.allTests),
+        testCase(VoiceOverTests.allTests),
+        testCase(RxSwiftTests.allTests),
     ]
 }
 #endif

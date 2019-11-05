@@ -45,6 +45,10 @@ public class Table: UITableView {
         self.data.accept(data)
     }
     
+    public func add(view: UIView) {
+        self.data.accept(data.value + [view])
+    }
+    
     private func bind() {
         bag.insert([
             data.subscribe(onNext: { [weak self] (data) in
@@ -109,6 +113,17 @@ extension Table: UITableViewDelegate {
 // MARK: RxSwift Extension
 @available(iOS 9.0, *)
 public extension Table {
+    
+    convenience init(defaultCellHeight: Float? = nil,
+                     source: BehaviorRelay<[UIView]>) {
+        self.init(defaultCellHeight: defaultCellHeight) {
+            []
+        }
+        
+        bind(source: source)
+    }
+    
+    @discardableResult
     func bind(source: BehaviorRelay<[UIView]>) -> Self {
         source
             .subscribe(onNext: { [weak self] (newData) in
