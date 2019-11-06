@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxRelay
 
 @available(iOS 9.0, *)
 public class Label: UILabel {
+    private var data = BehaviorRelay<String>(value: "")
+    private var bag = DisposeBag()
+    
     public init(_ text: String) {
         super.init(frame: .zero)
         
@@ -19,6 +24,7 @@ public class Label: UILabel {
             adjustsFontForContentSizeCategory = true
         }
         accessibility(label: text, traits: .staticText)
+        bind()
     }
     
     required init?(coder: NSCoder) {
@@ -35,6 +41,36 @@ public class Label: UILabel {
     @discardableResult
     public func font(_ textStyle: UIFont.TextStyle) -> Self {
         return self.font(UIFont.preferredFont(forTextStyle: textStyle))
+    }
+    
+    private func bind() {
+        data
+            .subscribe(onNext: { value in
+            self.text = value
+        })
+            .disposed(by: bag)
+    }
+}
+
+// MARK: RxSwift Extension
+@available(iOS 9.0, *)
+public extension Label {
+    
+    convenience init(source: BehaviorRelay<String>) {
+        self.init(source.value)
+        
+        bind(source: source)
+    }
+    
+    @discardableResult
+    func bind(source: BehaviorRelay<String>) -> Self {
+        source
+            .subscribe(onNext: { [weak self] (newData) in
+                self?.data.accept(newData)
+            })
+            .disposed(by: bag)
+        
+        return self
     }
 }
 
