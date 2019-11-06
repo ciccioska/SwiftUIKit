@@ -113,7 +113,8 @@ public extension UIView {
         
         var observer: NSKeyValueObservation
             
-            observer = observe(\.superview) { (label, value) in
+        
+        observer = view.observe(\UIView.superview) { (label, value) in
             self.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
         }
         
@@ -127,7 +128,7 @@ public extension UIView {
         
         var observer: NSKeyValueObservation
         
-        observer = observe(\.superview) { (label, value) in
+        observer = view.observe(\UIView.superview) { (label, value) in
             self.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
         }
         

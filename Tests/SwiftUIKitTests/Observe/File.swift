@@ -4,13 +4,17 @@ import XCTest
 @available(iOS 9.0, *)
 final class ObserveTests: XCTestCase {
     func testObserve() {
-        let label = Label("SomeString")
+        let view = View()
+        
+        view.embed {
+            Label("SomeString")
             .accessibility(identifier: "SomeID")
             .padding()
-            .width(equalTo: label)
+            .width(equalTo: view)
             .debug()
+        }
         
-        assert(label.accessibilityLabel == "SomeString")
+        assert("something" == "SomeString")
     }
     
     static var allTests = [
