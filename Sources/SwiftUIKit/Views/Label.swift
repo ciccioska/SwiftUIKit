@@ -17,14 +17,13 @@ public class Label: UILabel {
     
     public init(_ text: String) {
         super.init(frame: .zero)
-        
-        self.text = text
-        
         if #available(iOS 10.0, *) {
             adjustsFontForContentSizeCategory = true
         }
         accessibility(label: text, traits: .staticText)
         bind()
+        
+        data.accept(text)
     }
     
     required init?(coder: NSCoder) {
