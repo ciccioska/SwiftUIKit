@@ -112,9 +112,8 @@ public extension UIView {
     func height(equalTo view: UIView, multiplier: Float = 1, constant: Float = 1) -> Self {
         
         var observer: NSKeyValueObservation
-            
         
-        observer = view.observe(\UIView.superview) { (label, value) in
+        observer = (self as UIView).observe(\UIView.superview) { (label, value) in
             self.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
         }
         
@@ -128,7 +127,7 @@ public extension UIView {
         
         var observer: NSKeyValueObservation
         
-        observer = view.observe(\UIView.superview) { (label, value) in
+        observer = (self as UIView).observe(\UIView.superview) { (label, value) in
             self.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
         }
         
