@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxCocoa
 
 @available(iOS 9.0, *)
 public extension UIView {
@@ -110,9 +111,13 @@ public extension UIView {
     @discardableResult
     func height(equalTo view: UIView, multiplier: Float = 1, constant: Float = 1) -> Self {
         
-        observe(\UIView.superview) { (label, value) in
-            heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
+        var observer: NSKeyValueObservation
+            
+            observer = observe(\.superview) { (label, value) in
+            self.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
         }
+        
+        add(observation: observer)
         
         return self
     }
@@ -120,9 +125,13 @@ public extension UIView {
     @discardableResult
     func width(equalTo view: UIView, multiplier: Float = 1, constant: Float = 1) -> Self {
         
-        observe(\UIView.superview) { (label, value) in
-            widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
+        var observer: NSKeyValueObservation
+        
+        observer = observe(\.superview) { (label, value) in
+            self.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
         }
+        
+        add(observation: observer)
         
         return self
     }
