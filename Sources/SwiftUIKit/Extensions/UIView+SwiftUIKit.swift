@@ -108,26 +108,6 @@ public extension UIView {
     }
     
     @discardableResult
-    func height(equalTo view: UIView, multiplier: Float = 1, constant: Float = 1) -> Self {
-        
-        observe(\UIView.superview) { (label, value) in
-            heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
-        }
-        
-        return self
-    }
-    
-    @discardableResult
-    func width(equalTo view: UIView, multiplier: Float = 1, constant: Float = 1) -> Self {
-        
-        observe(\UIView.superview) { (label, value) in
-            widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: CGFloat(multiplier), constant: CGFloat(constant)).isActive = true
-        }
-        
-        return self
-    }
-    
-    @discardableResult
     func layer(_ closure: (CALayer) -> Void) -> Self {
         closure(layer)
         
