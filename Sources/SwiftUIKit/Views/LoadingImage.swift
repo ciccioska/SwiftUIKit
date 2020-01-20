@@ -48,6 +48,13 @@ public class LoadingImage: UIView {
     }
     
     @discardableResult
+    public func onImageLoaded(_ handler: @escaping (UIImage?) -> Void) -> Self {
+        self.completionHandler = handler
+        
+        return self
+    }
+    
+    @discardableResult
     public func load(url: URL) -> Self {
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
