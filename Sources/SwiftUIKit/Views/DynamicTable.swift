@@ -41,16 +41,6 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
         register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    public init(dataType: T.Type, style: UITableView.Style = .plain) {
-        data = []
-        
-        super.init(frame: .zero, style: style)
-        
-        delegate = self
-        dataSource = self
-        register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -115,6 +105,12 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
     
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeights[indexPath] ?? UITableView.automaticDimension
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            didSelectHandler?(cell)
+        }
     }
 }
 

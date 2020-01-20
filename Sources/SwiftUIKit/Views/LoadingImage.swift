@@ -20,6 +20,23 @@ public class LoadingImage: UIView {
             }
             .start()
         }
+        
+        load(url: url, onCompletedLoading: onCompletedLoading)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @discardableResult
+    public func contentMode(_ mode: UIView.ContentMode) -> Self {
+        self.contentMode = mode
+        
+        return self
+    }
+    
+    @discardableResult
+    public func load(url: URL, onCompletedLoading: ((UIImage?) -> Void)? = nil) -> Self {
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             guard let data = data,
@@ -44,15 +61,6 @@ public class LoadingImage: UIView {
         }
         
         task.resume()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    @discardableResult
-    public func contentMode(_ mode: UIView.ContentMode) -> Self {
-        self.contentMode = mode
         
         return self
     }
