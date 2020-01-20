@@ -9,8 +9,12 @@ import UIKit
 
 @available(iOS 9.0, *)
 public class LoadingImage: UIView {
-    public init(_ url: URL, loadingTint: UIColor? = nil, onCompletedLoading: ((UIImage?) -> Void)? = nil) {
+    public init(_ url: URL? = nil,
+                loadingTint: UIColor? = nil,
+                onCompletedLoading: ((UIImage?) -> Void)? = nil) {
+        
         super.init(frame: .zero)
+        
         embed {
             LoadingView()
                 .configure {
@@ -19,6 +23,10 @@ public class LoadingImage: UIView {
                     }
             }
             .start()
+        }
+        
+        guard let url = url else {
+            return
         }
         
         load(url: url, onCompletedLoading: onCompletedLoading)
