@@ -9,11 +9,15 @@ import UIKit
 
 @available(iOS 9.0, *)
 public class LoadingImage: UIView {
+    private var completionHandler: ((UIImage?) -> Void)?
+    
     public init(_ url: URL? = nil,
                 loadingTint: UIColor? = nil,
                 onCompletedLoading: ((UIImage?) -> Void)? = nil) {
         
         super.init(frame: .zero)
+        
+        completionHandler = onCompletedLoading
         
         embed {
             LoadingView()
@@ -29,7 +33,7 @@ public class LoadingImage: UIView {
             return
         }
         
-        load(url: url, onCompletedLoading: onCompletedLoading)
+        load(url: url)
     }
     
     required init?(coder: NSCoder) {
@@ -44,7 +48,7 @@ public class LoadingImage: UIView {
     }
     
     @discardableResult
-    public func load(url: URL, onCompletedLoading: ((UIImage?) -> Void)? = nil) -> Self {
+    public func load(url: URL) -> Self {
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             guard let data = data,
@@ -53,7 +57,7 @@ public class LoadingImage: UIView {
                     print("Issue loading Image with url: \(url.absoluteString)")
                     print("Error: \(error?.localizedDescription ?? "-1")")
                     self?.update(color: .red)
-                    onCompletedLoading?(nil)
+                    self?.completionHandler?(nil)
                     return
             }
             guard let image = UIImage(data: data) else {
@@ -61,11 +65,11 @@ public class LoadingImage: UIView {
                 print("Issue loading Image with url: \(url.absoluteString)")
                 print("Error: Could not create UIImage from data")
                 self?.update(color: .red)
-                onCompletedLoading?(nil)
+                self?.completionHandler?(nil)
                 return
             }
             self?.update(image: image)
-            onCompletedLoading?(image)
+            self?.completionHandler?(image)
         }
         
         task.resume()
