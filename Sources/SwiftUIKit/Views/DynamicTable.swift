@@ -30,9 +30,20 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
     
     private var didSelectHandler: ((UITableViewCell) -> Void)?
     private var configureCell: ((UITableViewCell, IndexPath, T) -> Void)?
+    private var cellTypeHandler: ((IndexPath, T) -> UITableViewCell.Type)?
     
     public init(data: [T], style: UITableView.Style = .plain) {
         self.data = data
+        
+        super.init(frame: .zero, style: style)
+        
+        delegate = self
+        dataSource = self
+        register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    public init(dataType: T.Type, style: UITableView.Style = .plain) {
+        data = []
         
         super.init(frame: .zero, style: style)
         
@@ -54,6 +65,11 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
         reloadData()
     }
     
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            didSelectHandler?(cell)
+        }
+    }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard batchCount < data.count else {
@@ -76,9 +92,9 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
             reload()
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
         guard indexPath.row != data.count else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            
             cell.contentView.clear()
                 .embed {
                     VStack {
@@ -94,6 +110,10 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
         
         let cellData = data[indexPath.row]
         
+        let cellType = cellTypeHandler?(indexPath, cellData)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellType?.description() ?? "cell", for: indexPath)
+        
         configureCell?(cell, indexPath, cellData)
         
         return cell
@@ -105,12 +125,6 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
     
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeights[indexPath] ?? UITableView.automaticDimension
-    }
-    
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
-            didSelectHandler?(cell)
-        }
     }
 }
 
@@ -131,8 +145,32 @@ public extension DynamicTable {
     }
     
     @discardableResult
+    func cellType(_ handler: @escaping (IndexPath, T) -> UITableViewCell.Type) -> Self {
+        self.cellTypeHandler = handler
+        
+        return self
+    }
+    
+    @discardableResult
     func add(_ data: () -> [T]) -> Self {
         self.data += data()
+        
+        return self
+    }
+    
+    @discardableResult
+    func register(cell: UITableViewCell.Type) -> Self {
+        
+        self.register(cell, forCellReuseIdentifier: cell.description())
+        
+        return self
+    }
+    
+    @discardableResult
+    func register(nib type: UITableViewCell.Type) -> Self {
+        
+        let nib = UINib(nibName: "\(type)", bundle: Bundle(for: type))
+        self.register(nib, forCellReuseIdentifier: type.description())
         
         return self
     }
