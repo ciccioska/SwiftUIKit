@@ -13,6 +13,8 @@ public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataS
         didSet {
             if loadAmount > data.count {
                 reloadData()
+            } else if loadAmount < currentItems {
+                reloadData()
             }
         }
     }
