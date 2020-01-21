@@ -10,6 +10,7 @@ import UIKit
 @available(iOS 9.0, *)
 public class LoadingImage: UIView {
     private var completionHandler: ((UIImage?) -> Void)?
+    private var loadingTint: UIColor?
     
     public init(_ url: URL? = nil,
                 loadingTint: UIColor? = nil,
@@ -17,6 +18,7 @@ public class LoadingImage: UIView {
         
         super.init(frame: .zero)
         
+        self.loadingTint = loadingTint
         completionHandler = onCompletedLoading
         
         embed {
@@ -56,6 +58,16 @@ public class LoadingImage: UIView {
     
     @discardableResult
     public func load(url: URL) -> Self {
+        clear().embed {
+            LoadingView()
+                .configure {
+                    if let tint = loadingTint {
+                        $0.color = tint
+                    }
+            }
+            .start()
+        }
+        
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             guard let data = data,
