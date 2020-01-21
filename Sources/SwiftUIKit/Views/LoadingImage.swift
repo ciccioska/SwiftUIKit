@@ -84,7 +84,7 @@ public class LoadingImage: UIView {
         return self
     }
     
-    private func update(image: UIImage) {
+    public func update(image: UIImage) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else {
                 print("Image \(#function) Error!")
