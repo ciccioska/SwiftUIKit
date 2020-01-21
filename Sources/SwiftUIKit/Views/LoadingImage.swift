@@ -57,7 +57,7 @@ public class LoadingImage: UIView {
     }
     
     @discardableResult
-    public func load(url: URL) -> Self {
+    public func load(url: URL?) -> Self {
         clear().embed {
             LoadingView()
                 .configure {
@@ -66,6 +66,10 @@ public class LoadingImage: UIView {
                     }
             }
             .start()
+        }
+        
+        guard let url = url else {
+            return self
         }
         
         let request = URLRequest(url: url)
