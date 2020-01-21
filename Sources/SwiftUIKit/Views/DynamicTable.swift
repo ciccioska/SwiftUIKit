@@ -11,9 +11,7 @@ import UIKit
 public class DynamicTable<T>: UITableView, UITableViewDelegate, UITableViewDataSource {
     fileprivate var data: [T] {
         didSet {
-            if loadAmount > data.count {
-                reloadData()
-            } else if loadAmount < currentItems {
+            if loadAmount > data.count || loadAmount > currentItems {
                 reloadData()
             }
         }
