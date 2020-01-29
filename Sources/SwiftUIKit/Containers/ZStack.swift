@@ -11,7 +11,7 @@ import UIKit
 public class ZStack: UIView {
     public var views: [UIView] = []
     
-    public init(_ closure: () -> [UIView]) {
+    public init(@UIViewBuilder _ closure: () -> [UIView]) {
         views = closure()
         super.init(frame: .zero)
         
@@ -21,7 +21,7 @@ public class ZStack: UIView {
         }
     }
     
-    public init(_ closure: () -> [UIView?]) {
+    public init(@UIViewBuilder _ closure: () -> [UIView?]) {
            views = closure()
                .compactMap { $0 }
            super.init(frame: .zero)

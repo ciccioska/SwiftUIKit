@@ -15,7 +15,7 @@ public class HStack: UIView {
          padding: Float = 0,
          alignment: UIStackView.Alignment = .fill,
          distribution: UIStackView.Distribution = .fill,
-         _ closure: () -> [UIView]) {
+         @UIViewBuilder _ closure: () -> [UIView]) {
         views = closure()
         super.init(frame: .zero)
         
@@ -30,7 +30,7 @@ public class HStack: UIView {
          padding: Float = 0,
          alignment: UIStackView.Alignment = .fill,
          distribution: UIStackView.Distribution = .fill,
-         _ closure: () -> [UIView?]) {
+         @UIViewBuilder _ closure: () -> [UIView?]) {
         views = closure()
             .compactMap { $0 }
         super.init(frame: .zero)
