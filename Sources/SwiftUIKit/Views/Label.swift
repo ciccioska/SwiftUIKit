@@ -1,15 +1,15 @@
 //
 //  Label.swift
-//  SwiftUIKit-Example
+//  SwiftUIKit
 //
 //  Created by Zach Eriksen on 10/29/19.
-//  Copyright © 2019 oneleif. All rights reserved.
 //
 
 import UIKit
 
 @available(iOS 9.0, *)
 public class Label: UILabel {
+    
     public init(_ text: String) {
         super.init(frame: .zero)
         
@@ -21,8 +21,26 @@ public class Label: UILabel {
         accessibility(label: text, traits: .staticText)
     }
     
+    public init(_ attributedText: AttributedString) {
+        super.init(frame: .zero)
+        
+        self.attributedText = attributedText
+        
+        if #available(iOS 10.0, *) {
+            adjustsFontForContentSizeCategory = true
+        }
+        accessibility(label: attributedText.mutableString.description, traits: .staticText)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @discardableResult
+    public func number(ofLines lines: Int) -> Self {
+        numberOfLines = lines
+        
+        return self
     }
     
     @discardableResult
@@ -35,6 +53,42 @@ public class Label: UILabel {
     @discardableResult
     public func font(_ textStyle: UIFont.TextStyle) -> Self {
         return self.font(UIFont.preferredFont(forTextStyle: textStyle))
+    }
+    
+    @discardableResult
+    public func hideIfBlank() -> Self {
+        isHidden = text?.isEmpty ?? true
+        
+        return self
+    }
+    
+    @discardableResult
+    public func apply(attributes: StringAttributes) -> Self {
+        attributedText = AttributedString(string: text ?? "", attributes: attributes)
+        
+        return self
+    }
+    
+    @discardableResult
+    public func apply(attributes: StringAttributes, range: ClosedRange<Int>) -> Self {
+        attributedText = AttributedString(attributedString: attributedText ?? AttributedString(string: text ?? ""))
+            .set(attributes: attributes, range: range)
+        
+        return self
+    }
+    
+    @discardableResult
+    public func text(alignment: NSTextAlignment) -> Self {
+        textAlignment = alignment
+        
+        return self
+    }
+    
+    @discardableResult
+    public func text(color: UIColor) -> Self {
+        textColor = color
+        
+        return self
     }
 }
 

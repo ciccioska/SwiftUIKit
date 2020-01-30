@@ -45,4 +45,12 @@ public extension LoadingView {
     func play(_ ifTrue: () -> Bool) -> Self {
         return ifTrue() ? start() : stop()
     }
+    
+    @discardableResult
+    func color(_ color: UIColor) -> Self {
+        self.color = color
+        
+        return self
+    }
+    
 }
