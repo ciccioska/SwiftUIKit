@@ -1,0 +1,1510 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/NSMutableAttributedString+SwiftUIKit.swift",
+      "line": 10,
+      "symbol": "AttributedString",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/NSMutableAttributedString+SwiftUIKit.swift",
+      "line": 11,
+      "symbol": "AttributedStringKey",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/NSMutableAttributedString+SwiftUIKit.swift",
+      "line": 12,
+      "symbol": "StringAttributes",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/NSMutableAttributedString+SwiftUIKit.swift",
+      "line": 14,
+      "symbol": "StringAttributes",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIBarButton+SwiftUIKit.swift",
+      "line": 10,
+      "symbol": "BarButton",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 10,
+      "symbol": "Padding",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 11,
+      "symbol": "Padding.leading(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 12,
+      "symbol": "Padding.trailing(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 13,
+      "symbol": "Padding.top(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 14,
+      "symbol": "Padding.bottom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 20,
+      "symbol": "UIView.init(withPadding:backgroundColor:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 30,
+      "symbol": "UIView.init(withPadding:backgroundColor:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 420,
+      "symbol": "UIView.accessibility(label:identifier:traits:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 444,
+      "symbol": "UIView.background(color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 451,
+      "symbol": "UIView.clipsToBounds(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 525,
+      "symbol": "UIView.allSubviews",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIView+SwiftUIKit.swift",
+      "line": 530,
+      "symbol": "UIView.debug()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIViewController+SwiftUIKit.swift",
+      "line": 11,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIViewController+SwiftUIKit.swift",
+      "line": 14,
+      "symbol": "ViewController.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIViewController+SwiftUIKit.swift",
+      "line": 24,
+      "symbol": "ViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIViewController+SwiftUIKit.swift",
+      "line": 33,
+      "symbol": "UIViewController.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Extensions/UIViewController+SwiftUIKit.swift",
+      "line": 60,
+      "symbol": "UIViewController.safe(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 11,
+      "symbol": "Navigate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 12,
+      "symbol": "Navigate.NavigationStyle",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 13,
+      "symbol": "Navigate.NavigationStyle.push",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 14,
+      "symbol": "Navigate.NavigationStyle.modal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 17,
+      "symbol": "Navigate.ToastStyle",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 18,
+      "symbol": "Navigate.ToastStyle.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 19,
+      "symbol": "Navigate.ToastStyle.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 20,
+      "symbol": "Navigate.ToastStyle.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 21,
+      "symbol": "Navigate.ToastStyle.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 22,
+      "symbol": "Navigate.ToastStyle.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 23,
+      "symbol": "Navigate.ToastStyle.custom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 25,
+      "symbol": "Navigate.ToastStyle.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Navigation/Navigate.swift",
+      "line": 47,
+      "symbol": "Navigate.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Button.swift",
+      "line": 11,
+      "symbol": "Button",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Button.swift",
+      "line": 14,
+      "symbol": "Button.init(_:titleColor:backgroundColor:forEvent:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Button.swift",
+      "line": 30,
+      "symbol": "Button.init(_:forEvent:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Divider.swift",
+      "line": 11,
+      "symbol": "Divider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Divider.swift",
+      "line": 12,
+      "symbol": "Divider.init(_:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/EffectView.swift",
+      "line": 11,
+      "symbol": "EffectView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/EffectView.swift",
+      "line": 12,
+      "symbol": "EffectView.init(for:closure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/EffectView.swift",
+      "line": 26,
+      "symbol": "BlurView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/EffectView.swift",
+      "line": 27,
+      "symbol": "BlurView.init(style:closure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/EffectView.swift",
+      "line": 41,
+      "symbol": "VibrancyView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/EffectView.swift",
+      "line": 42,
+      "symbol": "VibrancyView.init(blurStyle:vibrancyStyle:closure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 11,
+      "symbol": "Field",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 12,
+      "symbol": "Field.WillValueChangeHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 13,
+      "symbol": "Field.DidValueChangeHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 18,
+      "symbol": "Field.init(value:placeholder:keyboardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 37,
+      "symbol": "Field.willInputUpdateHandler(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 44,
+      "symbol": "Field.inputHandler(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 56,
+      "symbol": "Field",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Field.swift",
+      "line": 57,
+      "symbol": "Field.textField(_:shouldChangeCharactersIn:replacementString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Image.swift",
+      "line": 11,
+      "symbol": "Image",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Image.swift",
+      "line": 12,
+      "symbol": "Image.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Image.swift",
+      "line": 16,
+      "symbol": "Image.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Image.swift",
+      "line": 22,
+      "symbol": "Image.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Image.swift",
+      "line": 41,
+      "symbol": "Image.contentMode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 11,
+      "symbol": "Label",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 13,
+      "symbol": "Label.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 24,
+      "symbol": "Label.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 40,
+      "symbol": "Label.number(ofLines:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 47,
+      "symbol": "Label.font(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 54,
+      "symbol": "Label.font(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 59,
+      "symbol": "Label.hideIfBlank()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 66,
+      "symbol": "Label.apply(attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 73,
+      "symbol": "Label.apply(attributes:range:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 81,
+      "symbol": "Label.text(alignment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 88,
+      "symbol": "Label.text(color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 96,
+      "symbol": "Label",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 97,
+      "symbol": "Label.title1(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 102,
+      "symbol": "Label.title2(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 107,
+      "symbol": "Label.title3(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 112,
+      "symbol": "Label.headline(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 117,
+      "symbol": "Label.subheadline(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 122,
+      "symbol": "Label.body(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 127,
+      "symbol": "Label.callout(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 132,
+      "symbol": "Label.caption1(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Label.swift",
+      "line": 137,
+      "symbol": "Label.caption2(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingImage.swift",
+      "line": 11,
+      "symbol": "LoadingImage",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingImage.swift",
+      "line": 15,
+      "symbol": "LoadingImage.init(_:loadingTint:onCompletedLoading:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingImage.swift",
+      "line": 46,
+      "symbol": "LoadingImage.contentMode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingImage.swift",
+      "line": 53,
+      "symbol": "LoadingImage.onImageLoaded(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingImage.swift",
+      "line": 60,
+      "symbol": "LoadingImage.load(url:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingImage.swift",
+      "line": 103,
+      "symbol": "LoadingImage.update(image:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 11,
+      "symbol": "LoadingView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 12,
+      "symbol": "LoadingView.init(forStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 31,
+      "symbol": "LoadingView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 33,
+      "symbol": "LoadingView.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 40,
+      "symbol": "LoadingView.stop()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 47,
+      "symbol": "LoadingView.play(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/LoadingView.swift",
+      "line": 52,
+      "symbol": "LoadingView.color(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 11,
+      "symbol": "MultiLineField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 12,
+      "symbol": "MultiLineField.WillValueChangeHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 13,
+      "symbol": "MultiLineField.DidValueChangeHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 18,
+      "symbol": "MultiLineField.init(value:keyboardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 34,
+      "symbol": "MultiLineField.willInputUpdateHandler(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 41,
+      "symbol": "MultiLineField.inputHandler(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 49,
+      "symbol": "MultiLineField",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 50,
+      "symbol": "MultiLineField.textView(_:shouldChangeTextIn:replacementText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/MultiLineField.swift",
+      "line": 56,
+      "symbol": "MultiLineField.textViewDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/NavButton.swift",
+      "line": 11,
+      "symbol": "NavButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/NavButton.swift",
+      "line": 15,
+      "symbol": "NavButton.init(_:destination:style:titleColor:backgroundColor:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/NavButton.swift",
+      "line": 35,
+      "symbol": "NavButton.init(_:destination:style:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/ScrollView.swift",
+      "line": 11,
+      "symbol": "ScrollView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/ScrollView.swift",
+      "line": 12,
+      "symbol": "ScrollView.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Slider.swift",
+      "line": 11,
+      "symbol": "Slider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Slider.swift",
+      "line": 14,
+      "symbol": "Slider.init(value:from:to:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Spacer.swift",
+      "line": 11,
+      "symbol": "Spacer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Spacer.swift",
+      "line": 15,
+      "symbol": "Spacer.init(height:width:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Switch.swift",
+      "line": 11,
+      "symbol": "Switch",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Switch.swift",
+      "line": 14,
+      "symbol": "Switch.init(isOn:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 11,
+      "symbol": "Table",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 19,
+      "symbol": "Table.init(defaultCellHeight:estimatedCellHeight:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 41,
+      "symbol": "Table",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 43,
+      "symbol": "Table.didSelectHandler(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 50,
+      "symbol": "Table.configureCell(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 58,
+      "symbol": "Table",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 59,
+      "symbol": "Table.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 63,
+      "symbol": "Table.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 67,
+      "symbol": "Table.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 83,
+      "symbol": "Table.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 90,
+      "symbol": "Table.tableView(_:estimatedHeightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 99,
+      "symbol": "Table",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/Table.swift",
+      "line": 100,
+      "symbol": "Table.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 11,
+      "symbol": "CellDisplayable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 12,
+      "symbol": "CellDisplayable.cellID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 16,
+      "symbol": "DataConfigurable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 17,
+      "symbol": "DataConfigurable.ID",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 21,
+      "symbol": "CellUpdatable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 22,
+      "symbol": "CellUpdatable.update(forData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 26,
+      "symbol": "CellConfigurable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 27,
+      "symbol": "CellConfigurable.configure(forData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 31,
+      "symbol": "TableViewCell",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 33,
+      "symbol": "TableHeaderFooterViewHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 34,
+      "symbol": "TableHeaderFooterTitleHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 37,
+      "symbol": "TableView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 38,
+      "symbol": "TableView.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 65,
+      "symbol": "TableView.init(initalData:style:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 80,
+      "symbol": "TableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 82,
+      "symbol": "TableView.update(shouldReloadData:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 94,
+      "symbol": "TableView.append(shouldReloadData:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 107,
+      "symbol": "TableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 112,
+      "symbol": "TableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 121,
+      "symbol": "TableView.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 125,
+      "symbol": "TableView.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 129,
+      "symbol": "TableView.tableView(_:indentationLevelForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 133,
+      "symbol": "TableView.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 155,
+      "symbol": "TableView.tableView(_:viewForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 159,
+      "symbol": "TableView.tableView(_:titleForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 165,
+      "symbol": "TableView.tableView(_:viewForFooterInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 169,
+      "symbol": "TableView.tableView(_:titleForFooterInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 175,
+      "symbol": "TableView.tableView(_:canEditRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 179,
+      "symbol": "TableView.tableView(_:canMoveRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 183,
+      "symbol": "TableView.tableView(_:canFocusRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 189,
+      "symbol": "TableView.tableView(_:shouldHighlightRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 193,
+      "symbol": "TableView.tableView(_:shouldIndentWhileEditingRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 197,
+      "symbol": "TableView.tableView(_:shouldShowMenuForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 203,
+      "symbol": "TableView.tableView(_:editingStyleForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 207,
+      "symbol": "TableView.tableView(_:titleForDeleteConfirmationButtonForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 211,
+      "symbol": "TableView.tableView(_:editActionsForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 217,
+      "symbol": "TableView.tableView(_:commit:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 221,
+      "symbol": "TableView.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 225,
+      "symbol": "TableView.tableView(_:didDeselectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 229,
+      "symbol": "TableView.tableView(_:willBeginEditingRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 233,
+      "symbol": "TableView.tableView(_:didEndEditingRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 237,
+      "symbol": "TableView.tableView(_:didHighlightRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 241,
+      "symbol": "TableView.tableView(_:didUnhighlightRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 245,
+      "symbol": "TableView.tableView(_:moveRowAt:to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 250,
+      "symbol": "TableView.tableView(_:leadingSwipeActionsConfigurationForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 255,
+      "symbol": "TableView.tableView(_:trailingSwipeActionsConfigurationForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 261,
+      "symbol": "TableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 263,
+      "symbol": "TableView.set(dataSource:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 270,
+      "symbol": "TableView.set(delegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 277,
+      "symbol": "TableView.register(cells:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 286,
+      "symbol": "TableView.headerView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 293,
+      "symbol": "TableView.footerView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 300,
+      "symbol": "TableView.headerTitle(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 307,
+      "symbol": "TableView.footerTitle(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 314,
+      "symbol": "TableView.indentationLevelForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 321,
+      "symbol": "TableView.canEditRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 328,
+      "symbol": "TableView.canMoveRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 335,
+      "symbol": "TableView.canFocusRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 342,
+      "symbol": "TableView.shouldHighlightRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 349,
+      "symbol": "TableView.shouldIndentWhileEditingRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 356,
+      "symbol": "TableView.shouldShowMenuForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 363,
+      "symbol": "TableView.editingStyleForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 370,
+      "symbol": "TableView.titleForDeleteConfirmationButtonForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 377,
+      "symbol": "TableView.editActionsForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 384,
+      "symbol": "TableView.commitEditingStyleForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 391,
+      "symbol": "TableView.didSelectRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 398,
+      "symbol": "TableView.didDeselectRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 405,
+      "symbol": "TableView.willBeginEditingRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 412,
+      "symbol": "TableView.didEndEditingRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 419,
+      "symbol": "TableView.didHighlightRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 426,
+      "symbol": "TableView.didUnhighlightRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 433,
+      "symbol": "TableView.moveRowAtSourceIndexPathToDestinationIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 440,
+      "symbol": "TableView.leadingSwipeActionsConfigurationForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/TableView.swift",
+      "line": 447,
+      "symbol": "TableView.trailingSwipeActionsConfigurationForRowAtIndexPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 11,
+      "symbol": "WebView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 12,
+      "symbol": "WebView.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 24,
+      "symbol": "WebView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 25,
+      "symbol": "WebView.init(baseURL:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 31,
+      "symbol": "WebView.init(url:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 37,
+      "symbol": "WebView.init(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 43,
+      "symbol": "WebView.init(URL:allowingReadAccessTo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 49,
+      "symbol": "WebView.init(data:mimeType:characterEncodingName:baseURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 56,
+      "symbol": "WebView.loadHTMLString(baseURL:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 63,
+      "symbol": "WebView.load(url:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 70,
+      "symbol": "WebView.load(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 77,
+      "symbol": "WebView.loadFile(URL:allowingReadAccessTo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 84,
+      "symbol": "WebView.load(data:mimeType:characterEncodingName:baseURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 91,
+      "symbol": "WebView.set(uiDelegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leif/Development/SwiftUIKit/Sources/SwiftUIKit/Views/WebView.swift",
+      "line": 98,
+      "symbol": "WebView.set(navigationDelegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/leif/Development/SwiftUIKit"
+}
