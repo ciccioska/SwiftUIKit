@@ -187,7 +187,7 @@ extension TableView: UITableViewDataSource {
     // MARK: ShouldRowAt
     
     public func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-        shouldHighlightRowAtIndexPath?(indexPath) ?? false
+        shouldHighlightRowAtIndexPath?(indexPath) ?? true
     }
     
     public func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
@@ -219,7 +219,6 @@ extension TableView: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("DidSelect: \(indexPath)")
         didSelectRowAtIndexPath?(indexPath)
     }
     
