@@ -219,6 +219,7 @@ extension TableView: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("DidSelect: \(indexPath)")
         didSelectRowAtIndexPath?(indexPath)
     }
     
